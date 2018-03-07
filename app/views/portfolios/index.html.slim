@@ -8,3 +8,5 @@ h1 Portfolio Items
   p = portfolio_item.body
   = image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil?
   = link_to 'Edit', edit_portfolio_path(portfolio_item)
+  |    
+  = link_to 'Delete', portfolio_path(portfolio_item), data: { confirm: 'Are you sure?' }, method: :delete
