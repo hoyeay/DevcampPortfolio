@@ -33,11 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Slim HTML Template Engine
-gem 'slim-rails'
-# HTML/ERB to Slim Converter
-gem 'html2slim', '~> 0.2.0'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -54,3 +49,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Slim HTML Template Engine
+gem 'slim-rails'
+# HTML/ERB to Slim Converter
+gem 'html2slim', '~> 0.2.0'
+# FriendlyID
+gem 'friendly_id', '~> 5.1.0'
