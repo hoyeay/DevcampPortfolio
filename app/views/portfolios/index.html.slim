@@ -8,4 +8,4 @@ h1 Portfolio Items
   p
     = portfolio_item.body
   p
-    = image_tag portfolio_item.thumb_image
+    = image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil?
