@@ -1,5 +1,8 @@
 class Portfolio < ApplicationRecord
+  has_many :technologies
+  
   includes Portfolio
+  
   validates_presence_of :title, :subtitle, :body, :main_image, :thumb_image
   
   def self.angular
@@ -14,4 +17,5 @@ class Portfolio < ApplicationRecord
     self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
     self.thumb_image ||= Placeholder.image_generator(height: '350', width: '200')
   end
+  
 end
