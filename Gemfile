@@ -58,3 +58,5 @@ gem 'html2slim', '~> 0.2.0'
 gem 'friendly_id', '~> 5.1.0'
 # devise
 gem 'devise', '~> 4.4', '>= 4.4.1'
+# Hirb
+gem 'hirb', '~> 0.7.3'
