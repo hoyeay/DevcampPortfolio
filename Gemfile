@@ -56,3 +56,5 @@ gem 'slim-rails'
 gem 'html2slim', '~> 0.2.0'
 # FriendlyID
 gem 'friendly_id', '~> 5.1.0'
+# devise
+gem 'devise', '~> 4.4', '>= 4.4.1'
