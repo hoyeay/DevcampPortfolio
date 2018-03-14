@@ -19,4 +19,11 @@ html
       = link_to 'Register', new_user_registration_path
       |  |  
       = link_to 'Login', new_user_session_path
+      
     = yield
+    
+    - if session[:source]
+      p
+        |  Thank you for visiting from 
+        = session[:source]
+      
