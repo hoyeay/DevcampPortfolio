@@ -21,8 +21,6 @@ html
     
     = yield
 
-    - if session[:source]
-      p
-        |  Thank you for visiting from 
-        = session[:source]
-        
+    = source_helper
+
+    = source_helper('application')

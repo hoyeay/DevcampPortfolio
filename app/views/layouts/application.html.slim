@@ -20,7 +20,4 @@ html
     = login_helper 
     = yield
 
-    - if session[:source]
-      p
-        |  Thank you for visiting from 
-        = session[:source]
+    = source_helper('application')
