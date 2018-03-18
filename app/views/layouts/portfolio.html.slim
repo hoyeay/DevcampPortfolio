@@ -14,6 +14,8 @@ html
   body
     p#notice = notice
     p#alert = alert
+    
+    = render 'shared/nav', location: 'top'
 
     - if current_user.is_a?(User)
       = link_to 'Edit',  edit_user_registration_path
@@ -25,8 +27,6 @@ html
       = link_to 'Login', new_user_session_path
 
     = yield
-
-    = render 'shared/nav'
 
     - if session[:source]
       p

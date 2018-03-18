@@ -1,20 +1,3 @@
 h1 Create a new Portfolio Item
 
-= form_for @portfolio_item do |f|
-  - if @portfolio_item.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@portfolio_item.errors.count, "error")} prohibited this blog from being saved:"
-      ul
-        - @portfolio_item.errors.full_messages.each do |message|
-          li = message
-          
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :subtitle
-    = f.text_field :subtitle
-  .field
-    = f.label :body
-    = f.text_area :body
-  .actions = f.submit
+== render 'form', portfolio_item: @portfolio_item

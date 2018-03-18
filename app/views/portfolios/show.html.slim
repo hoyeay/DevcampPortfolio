@@ -1,7 +1,11 @@
-p#notice = notice
-
 = image_tag @portfolio_item.main_image
 
 h1 = @portfolio_item.title
 em = @portfolio_item.subtitle
 p = @portfolio_item.body
+
+h2 Technologies Used
+p 
+  - @portfolio_item.technologies.each do |t|
+    = t.name
+    br
