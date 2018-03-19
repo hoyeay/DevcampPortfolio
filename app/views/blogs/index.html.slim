@@ -1,6 +1,6 @@
 p#notice = notice
-h1 Listing blogs
 
+h1 Listing blogs
 table
   thead
     tr
@@ -8,15 +8,8 @@ table
       th Body
       th[colspan="4"]
   tbody
-    - @blogs.each do |blog|
-      tr
-        td = blog.title
-        td = blog.body
-        td = link_to blog.status, toggle_status_blog_path(blog)
-        td = link_to 'Show', blog
-        td = link_to 'Edit', edit_blog_path(blog)
-        td = link_to 'Delete', blog, data: { confirm: 'Are you sure?' }, method: :delete
-      
+    = render @blogs
+    
 br
   
 = link_to 'New Blog', new_blog_path
