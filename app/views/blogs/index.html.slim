@@ -1,15 +1,19 @@
 p#notice = notice
 
 h1 Listing blogs
+
+= link_to 'New Blog', new_blog_path
+br
+br
+
 table
   thead
     tr
       th Title
+      th Date
       th Body
       th[colspan="4"]
   tbody
     = render @blogs
     
 br
-  
-= link_to 'New Blog', new_blog_path
