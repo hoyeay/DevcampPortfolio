@@ -61,3 +61,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.1'
 # Hirb
 gem 'hirb', '~> 0.7.3'
+# Bootstrap 4
+gem 'bootstrap', '~> 4.0.0'
+# jquery rails
+gem 'jquery-rails'
