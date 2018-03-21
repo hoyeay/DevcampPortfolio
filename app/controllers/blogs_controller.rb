@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs
   def index
-    @blogs = Blog.all
+    @blogs = Blog.special_blogs
     @page_title = 'Devcamp | My Blog'
   end
 
