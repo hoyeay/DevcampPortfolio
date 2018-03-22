@@ -65,5 +65,8 @@ gem 'hirb', '~> 0.7.3'
 gem 'bootstrap', '~> 4.0.0'
 # jquery rails
 gem 'jquery-rails'
-
+# peregrine view tool
 gem 'peregrine_view_tool', '~> 0.1.1'
+
+# petergate - authorization
+gem 'petergate', '~> 1.7'
