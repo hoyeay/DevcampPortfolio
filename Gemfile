@@ -65,3 +65,5 @@ gem 'hirb', '~> 0.7.3'
 gem 'bootstrap', '~> 4.0.0'
 # jquery rails
 gem 'jquery-rails'
+
+gem 'peregrine_view_tool', git: 'https://github.com/hoyeay/peregrine_view_tool'

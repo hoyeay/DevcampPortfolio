@@ -17,4 +17,8 @@ module ApplicationHelper
     end
   end
   
+  def copyright_generator
+    PeregrineViewTool::Renderer.copyright 'Jose Ramirez', 'All rights reserved.'
+  end
+  
 end
