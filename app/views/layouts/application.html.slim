@@ -13,11 +13,11 @@ html
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    link[href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700" rel="stylesheet"]
     
   body.text-center
     .cover-container.d-flex.h-100.p-3.mx-auto.flex-column
       = render 'shared/application_nav'
-      = login_helper
       = yield
-      = copyright_generator
       = source_helper('application')
+      = render 'shared/application_footer'
