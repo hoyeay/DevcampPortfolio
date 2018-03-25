@@ -124,3 +124,12 @@ body {
 .auth-links a {
   color: #413D3D
 }
+
+.card {
+  border: 1px solid rgba(114, 53, 230, 0.50);
+}
+
+.form-control:focus {
+  border-color: #7235E6;
+  box-shadow: 0 0 0 0.2rem rgba(114, 53, 230, 0.25);
+}

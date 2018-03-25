@@ -41,13 +41,13 @@
                 | (we need your current password to confirm your changes)
               br
               = f.password_field :current_password, autocomplete: "off", class: 'form-control'
-            .actions
+            .actions.form-group
               = f.submit "Update", class: 'btn btn-primary'
       .col-md-4.text-left
         h5.card-title
           | Cancel Account
         p
-          | Unhappy?
+          | All data will be deleted. This is not reversible.
           = button_to "Cancel my account", registration_path(resource_name), 
                   data: { confirm: "Are you sure?" }, 
                   method: :delete, class: 'btn btn-danger'
