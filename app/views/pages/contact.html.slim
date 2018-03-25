@@ -1,9 +1,18 @@
-h1 Pages#contact
-
-p = number_to_phone '9728401234'
-
-p = number_to_currency '15950'
-
-p = number_to_percentage '70.23'
-
-p = number_with_delimiter '8372344'
+.row
+  .col-md-6
+    h1 Want to Contact Us?
+    
+    hr
+    
+    h4 Email
+    p
+      a[href="mailto:#{contact_email}?subject=PortfolioContact"]
+        = contact_email
+        
+    h4 Phone Number
+    p = number_to_phone(contact_phone)
+    
+    h4 Office Address
+    p = contact_address
+  .col-md-6
+    iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.65987089306!2d-96.77300468550267!3d32.90715998093281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c206d552ad039%3A0xa23bc3526a9cb064!2s11500+N+Central+Expy%2C+Dallas%2C+TX+75243!5e0!3m2!1sen!2sus!4v1522007619019" width="350" height="350" frameborder="0" style="border:0" allowfullscreen]

@@ -14,6 +14,7 @@ a,
 a:focus,
 a:hover {
   color: #413D3D;
+  text-decoration: none;
 }
 
 /* Custom default button */
@@ -75,7 +76,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: #7235E6;
 }
 
 .nav-masthead .nav-link + .nav-link {

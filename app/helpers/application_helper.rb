@@ -12,13 +12,14 @@ module ApplicationHelper
   
   def source_helper(layout_name)
     if session[:source] 
-      greeting = "Thank you for visiting from #{session[:source]} and you're on the #{layout_name} layout."
+      greeting = "Thank you for visiting from #{session[:source]} 
+                      and you're on the #{layout_name} layout."
       content_tag(:p, greeting, class: 'source-greeting')
     end
   end
   
   def copyright_generator
-    PeregrineViewTool::Renderer.copyright 'Jose Ramirez', 'All rights reserved.'
+    PeregrineViewTool::Renderer.copyright 'Presstee LLC', 'All rights reserved.'
   end
   
 end
