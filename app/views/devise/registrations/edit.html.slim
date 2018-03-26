@@ -2,7 +2,7 @@
   .card-body
     .row
       .col-md-8.text-left
-        h5.card-title
+        h5.card-title.text-center
           | Edit 
           = resource_name.to_s.humanize
         p.card-text
@@ -11,11 +11,11 @@
             .form-group
               = f.label :name
               br
-              = f.text_field :name, class: 'form-control'
+              = f.text_field :name, autofocus: true, class: 'form-control'
             .form-group
               = f.label :email
               br
-              = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+              = f.email_field :email, autocomplete: "email", class: 'form-control'
             - if devise_mapping.confirmable? && resource.pending_reconfirmation?
               div
                 | Currently waiting confirmation for: 
@@ -44,7 +44,7 @@
             .actions.form-group
               = f.submit "Update", class: 'btn btn-primary'
       .col-md-4.text-left
-        h5.card-title
+        h5.card-title.text-center
           | Cancel Account
         p
           | All data will be deleted. This is not reversible.
